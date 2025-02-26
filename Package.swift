@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "NetfilmPlayer",
             dependencies: [],
-            path: "Sources" // Ensure this matches your source folder structure
+            path: "Sources/NetfilmPlayer" // Ensure this matches your source folder structure
         )
     ]
 )
