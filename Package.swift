@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -7,22 +7,27 @@ let package = Package(
         .iOS(.v13) // Minimum supported iOS version
     ],
     products: [
-        // Defines the library that will be available to other projects
         .library(
             name: "NetfilmPlayer",
             targets: ["NetfilmPlayer"]
         ),
     ],
     dependencies: [
-        // Add external dependencies if needed in the future
+        // إضافة SnapKit
+        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
+        // إضافة NVActivityIndicatorView
+        .package(url: "https://github.com/ninjaprox/NVActivityIndicatorView.git", from: "4.7.0"),
     ],
     targets: [
         .target(
             name: "NetfilmPlayer",
-            dependencies: [],
-            path: "Source", // المسار إلى مجلد Source
+            dependencies: [
+                "SnapKit", // إضافة SnapKit كمكتبة تابعة
+                "NVActivityIndicatorView" // إضافة NVActivityIndicatorView كمكتبة تابعة
+            ],
+            path: "Source",
             resources: [
-                .process("Pod_Asset_NetfilmPlayer.xcassets") // تضمين مجلد .xcassets كأصول
+                .process("Pod_Asset_NetfilmPlayer.xcassets")
             ]
         )
     ]
