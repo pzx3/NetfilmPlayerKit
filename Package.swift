@@ -20,7 +20,10 @@ let package = Package(
         .target(
             name: "NetfilmPlayer",
             dependencies: [],
-            path: "Sources/NetfilmPlayer" // Ensure this matches your source folder structure
+            path: "Source", // المسار إلى مجلد Source
+            resources: [
+                .process("Pod_Asset_NetfilmPlayer.xcassets") // تضمين مجلد .xcassets كأصول
+            ]
         )
     ]
 )
