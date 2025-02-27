@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "NetfilmPlayer",
+    name: "NetfilmPlayerKit",
     platforms: [
         .iOS(.v13) // Minimum supported iOS version
     ],
     products: [
         .library(
-            name: "NetfilmPlayer",
-            targets: ["NetfilmPlayer"]
+            name: "NetfilmPlayerKit",
+            targets: ["NetfilmPlayerKit"]
         ),
     ],
     dependencies: [
@@ -20,7 +20,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "NetfilmPlayer",
+            name: "NetfilmPlayerKit",
             dependencies: [
                 "SnapKit", // إضافة SnapKit كمكتبة تابعة
                 "NVActivityIndicatorView" // إضافة NVActivityIndicatorView كمكتبة تابعة
