@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "NetfilmPlayerKit",
+    name: "NetfilmPlayer",
     platforms: [
         .iOS(.v13) // Minimum supported iOS version
     ],
     products: [
         .library(
-            name: "NetfilmPlayerKit",
-            targets: ["NetfilmPlayerKit"]
+            name: "NetfilmPlayer",
+            targets: ["NetfilmPlayer"]
         ),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-            name: "NetfilmPlayerKit",
+            name: "NetfilmPlayer",
             dependencies: [
             ],
             path: "Source",
