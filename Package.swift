@@ -4,7 +4,6 @@ import PackageDescription
 let package = Package(
     name: "NetfilmPlayer",
     platforms: [
-        .iOS(.v13) // Minimum supported iOS version
     ],
     products: [
         .library(
