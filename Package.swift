@@ -13,10 +13,6 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // إضافة SnapKit
-        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
-        // إضافة NVActivityIndicatorView
-        .package(url: "https://github.com/ninjaprox/NVActivityIndicatorView.git", from: "4.7.0"),
     ],
     targets: [
         .target(
