@@ -18,8 +18,6 @@ let package = Package(
         .target(
             name: "NetfilmPlayerKit",
             dependencies: [
-                "SnapKit", // إضافة SnapKit كمكتبة تابعة
-                "NVActivityIndicatorView" // إضافة NVActivityIndicatorView كمكتبة تابعة
             ],
             path: "Source",
             resources: [
