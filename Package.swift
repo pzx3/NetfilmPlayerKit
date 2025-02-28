@@ -13,11 +13,15 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
+        .package(url: "https://github.com/ninjaprox/NVActivityIndicatorView.git", from: "5.0.0")
     ],
     targets: [
         .target(
             name: "NetfilmPlayer",
             dependencies: [
+                "SnapKit",
+                "NVActivityIndicatorView"
             ],
             path: "Source",
             resources: [
